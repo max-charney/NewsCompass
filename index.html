@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized News Curator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html">Home</a>
+            <a href="news-analysis.html">News Analysis</a>
+            <a href="education.html">Education</a>
+            <a href="quiz.html">Knowledge Quiz</a>
+            <a href="events.html">Global Events</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Personalized News Curator</h1>
+        <form id="preferences-form">
+            <label for="topics">Choose search interests (separate with commas):</label>
+            <input type="text" id="topics" placeholder="e.g., Technology, Health, Sports" required>
+           
+            <div id="political-slider-root"></div>
+           
+            <button type="submit">Get News</button>
+        </form>
+        <div id="news-container"></div>
+    </div>
+    <script src="political-slider.js" type="text/babel"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bias and News Knowledge Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="quiz-styles.css">
+</head>
+<body class="page-transition">
+    <nav>
+        <div class="container">
+            <a href="index.html">Home</a>
+            <a href="news-analysis.html">News Analysis</a>
+            <a href="education.html">Education</a>
+            <a href="quiz.html">Knowledge Quiz</a>
+            <a href="events.html">Global Events</a>
+            </div>
+    </nav>
+    <div class="container">
+        <h1>Bias and News Knowledge Quiz</h1>
+        <div id="quiz-selection">
+            <h2>Select Quiz Length:</h2>
+            <button class="quiz-btn" data-length="short">Short (5 questions)</button>
+            <button class="quiz-btn" data-length="medium">Medium (10 questions)</button>
+            <button class="quiz-btn" data-length="long">Long (15 questions)</button>
+        </div>
+        <div id="quiz-container" style="display: none;">
+            <div id="progress-indicator"></div>
+            <div id="question-container"></div>
+            <div id="options-container"></div>
+            <button id="submit-btn" class="quiz-btn">Submit</button>
+            <button id="next-btn" class="quiz-btn" style="display: none;">Next Question</button>
+        </div>
+        <div id="results-container" style="display: none;">
+            <h2>Quiz Results</h2>
+            <p>Your score: <span id="score"></span></p>
+            <p>Your level: <span id="level"></span></p>
+            <p id="level-description"></p>
+            <button id="restart-btn" class="quiz-btn">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="quiz-script.js"></script>
+</body>
+</html>

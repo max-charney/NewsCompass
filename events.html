@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Events Map</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html">Home</a>
+            <a href="news-analysis.html">News Analysis</a>
+            <a href="education.html">Education</a>
+            <a href="quiz.html">Knowledge Quiz</a>
+            <a href="events.html">Global Events</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Global Events Map</h1>
+        <div id="events-map-root"></div>
+    </div>
+    <script type="text/babel" src="events-map.js"></script>
+</body>
+</html>
