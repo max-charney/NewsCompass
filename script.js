@@ -1,5 +1,5 @@
 // Constants
-const API_KEY = 'c9f9870090494c6ebf3e7bda50a22f0c';
+const API_KEY = REDACTED;
 const ARTICLES_PER_BATCH = 100;
 const MAX_ARTICLES = 100;
 const MAX_PAGES = 5;
